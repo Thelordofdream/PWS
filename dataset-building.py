@@ -13,14 +13,14 @@ with open("news-snippets.tsv", "a", encoding="utf-8") as f:
                 content = file.read()
                 soup = BeautifulSoup(content, "lxml")
                 try:
-                    titles = [re.findall(r'<a class="l lLrAF" .*?>(.*?)</a>', str(each))[0].replace("<em>", "").replace("</em>", "").replace(" ...", "").replace("\"", "") for each in soup.find_all("h3", class_="r dO0Ag")]
-                    abstracts = [re.findall(r'st">(.*?)</div>', str(each))[0].replace("<em>", "").replace("</em>", "").replace("\xa0...", "").replace("\"", "") for each in soup.find_all("div", class_="st")]
+                    titles = [re.findall(r'<a class="l lLrAF" .*?>(.*?)</a>', str(each))[0].replace("<em>", "").replace("</em>", "").replace(" ...", "").replace("\"", "").replace(u"\u201c", "").replace(u"\u201d", "").replace(u"\u2013", " ").replace(u"\u2014", " ").replace(u"\u20ac", "").replace(u"\u200b", "").replace(u"\u2026", " ").replace(u"\u2318", "") for each in soup.find_all("h3", class_="r dO0Ag")]
+                    abstracts = [re.findall(r'st">(.*?)</div>', str(each))[0].replace("<em>", "").replace("</em>", "").replace("\xa0...", "").replace("\"", "").replace(u"\u201c", "").replace(u"\u201d", "").replace(u"\u2013", " ").replace(u"\u2014", " ").replace(u"\u20ac", "").replace(u"\u200b", "").replace(u"\u2026", " ").replace(u"\u2318", "") for each in soup.find_all("div", class_="st")]
                     medias = [re.findall(r'<span class=".*?xQ82C e8fRJf">(.*?)</span>', str(each))[0] for each in soup.find_all("div", class_="slp")]
                     urls = [re.findall(r'<a class="l lLrAF" href="(.*?)"', str(each))[0] for each in
                               soup.find_all("h3", class_="r dO0Ag")]
                     if len(titles) == len(abstracts) and len(titles) == len(medias) and len(titles) == len(urls):
                         for i in range(len(titles)):
-                            # print(titles[i] + "\t" + abstracts[i])
+                            print(titles[i] + "\t" + abstracts[i])
                             f.write(query + "\t" + str(year) + "\t" + medias[i] + "\t" + titles[i] + "\t" + urls[i] + "\t" + abstracts[i] + "\n")
                     else:
                         print("Alignment Error!")

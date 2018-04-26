@@ -58,6 +58,7 @@ with open("similarity-matrix-concept.tsv", "a", encoding="utf-8") as f:
     for i in range(num_concepts):
         header += concepts[i] + "\t"
     header += concepts[-1] + "\n"
+    f.write(header)
     for a in range(2):
         sim = similarity_matrix_concept[a]
         for b in range(num_concepts):

@@ -1,0 +1,76 @@
+query	concept	2016	2017
+apple	Apple	49	50
+apple	Cook	6	11
+apple	iPhone	12	5
+apple	users	2	8
+apple computer	Apple	50	48
+apple computer	Microsoft	4	8
+apple computer	MacBook	16	4
+apple computer	iPad	8	8
+apple computer	Pro	14	14
+apple computer	computers	15	14
+apple computer	year	12	2
+apple computer	people	4	7
+apple computer	years	8	5
+apple computer	PC	12	4
+apple computer	computer	27	31
+apple computer	iMac	4	6
+apple mac	Apple	50	50
+apple mac	macOS	7	4
+apple mac	users	5	7
+apple mac	iPhone	7	9
+apple mac	iPad	4	7
+apple mac	Macs	9	9
+apple mac	iOS	7	4
+apple mac	Pro	22	20
+apple mac	Mac	37	43
+apple mac	sales	6	6
+apple mac	year	6	10
+apple mac	time	7	4
+iPhone	Apple	40	31
+iPhone	iPhone	49	39
+iPhone	iPhones	5	13
+iPhone	iOS	3	6
+iPhone	phones	6	6
+iPhone	phone	13	5
+iPod	music	18	13
+iPod	Apple	31	30
+iPod	iPad	7	5
+iPod	iPhone	14	9
+iPod	iPod	49	49
+iPod	iPods	8	7
+iPod	Fadell	2	8
+iPod	years	9	5
+iPod	Nano	2	9
+iPod	Shuffle	5	10
+iPod	touch	4	6
+iPod	products	3	7
+apple juice	Juice	6	7
+apple juice	apples	9	6
+apple juice	children	3	7
+apple juice	Cider	14	13
+apple juice	cider	24	26
+apple juice	juice	31	29
+apple juice	drink	11	15
+apple juice	vinegar	8	19
+apple juice	beverage	10	0
+apple juice	sugar	2	9
+apple juice	weight	1	9
+apple juice	apple	42	44
+juice	juice	32	35
+juice	children	5	6
+juice	Juice	29	23
+juice	drinks	7	3
+juice	fruit	9	13
+juice	apple	3	8
+orange juice	breakfast	7	4
+orange juice	juice	46	45
+orange juice	Brazil	3	7
+orange juice	Florida	11	15
+orange juice	Orange	23	21
+orange juice	oranges	6	7
+orange juice	orange	42	38
+orange juice	prices	3	7
+orange juice	fruit	8	12
+orange juice	Hurricane	1	9
+orange juice	year	6	8

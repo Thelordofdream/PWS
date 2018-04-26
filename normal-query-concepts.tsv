@@ -1,27 +1,27 @@
 query	concept	2016	2017
-apple	Apple	49	50
-apple	Cook	6	11
-apple	iPhone	12	5
-apple computer	Apple	50	48
-apple computer	MacBook	16	4
-apple computer	iPad	8	8
-apple computer	Pro	14	14
-apple computer	PC	12	4
+apple	apple	49	50
+apple	cook	6	11
+apple	iphone	12	5
+apple computer	apple	50	48
+apple computer	macbook	16	4
+apple computer	ipad	8	8
+apple computer	pro	14	14
+apple computer	pc	12	4
 apple computer	computer	42	45
-apple mac	Apple	50	50
-apple mac	iPhone	7	9
-apple mac	Pro	22	20
-apple mac	Mac	46	52
+apple mac	apple	50	50
+apple mac	iphone	7	9
+apple mac	pro	22	20
+apple mac	mac	46	52
 apple mac	year	6	10
-iPhone	Apple	40	31
-iPhone	iPhone	54	52
+iPhone	apple	40	31
+iPhone	iphone	54	52
 iPhone	phone	13	5
 iPod	music	18	13
-iPod	Apple	31	30
-iPod	iPhone	14	9
-iPod	iPod	57	56
-iPod	Shuffle	5	10
-apple juice	Cider	38	39
+iPod	apple	31	30
+iPod	iphone	14	9
+iPod	ipod	57	56
+iPod	shuffle	5	10
+apple juice	cider	38	39
 apple juice	juice	31	29
 apple juice	drink	11	15
 apple juice	vinegar	8	19
@@ -29,6 +29,6 @@ apple juice	apple	51	50
 juice	juice	61	58
 juice	fruit	9	13
 orange juice	juice	46	45
-orange juice	Florida	11	15
-orange juice	Orange	65	59
+orange juice	florida	11	15
+orange juice	orange	65	59
 orange juice	fruit	8	12

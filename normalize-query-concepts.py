@@ -44,4 +44,4 @@ with open("normal-query-concepts.tsv", "a", encoding="utf-8") as f:
                 unique1.append(each.lower())
                 unique2.append(each)
         for each in qc[query].keys():
-            f.write(query + "\t" + each + "\t" + str(qc[query][each][2016]) + "\t" + str(qc[query][each][2017]) + "\n")
+            f.write(query + "\t" + each.lower() + "\t" + str(qc[query][each][2016]) + "\t" + str(qc[query][each][2017]) + "\n")

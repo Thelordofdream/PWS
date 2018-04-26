@@ -55,7 +55,7 @@ if os.path.exists("similarity-matrix-concept.tsv"):
     os.remove("similarity-matrix-concept.tsv")
 with open("similarity-matrix-concept.tsv", "a", encoding="utf-8") as f:
     header = "concept\tyear\t"
-    for i in range(num_concepts):
+    for i in range(num_concepts - 1):
         header += concepts[i] + "\t"
     header += concepts[-1] + "\n"
     f.write(header)

@@ -1,6 +1,3 @@
-import json
+import pandas as pd
 
-with open('', 'w') as outfile:
-    for i in outfile:
-        keys = json.load(i)
-print(keys)
+query_concepts = pd.read_csv("query-concepts.tsv", header=0, sep="\t")

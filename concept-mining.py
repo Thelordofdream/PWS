@@ -7,7 +7,7 @@ nlp = spacy.load('en')
 nlp.Defaults.stop_words.add("'s")
 candidate_keys = {}
 keys = {}
-threshold = 0.1
+threshold = 0.15
 snippets = pd.read_csv("news-snippets.tsv", header=0, sep="\t")
 
 if os.path.exists("query-concepts.tsv"):

@@ -20,6 +20,7 @@ with open("query-concepts.tsv", "a", encoding="utf-8") as f:
         sub_snippet = snippets[snippets['query'] == query]
         num = sub_snippet["query"].count()
 
+        # Find all candidate concepts
         for index, row in sub_snippet.iterrows():
             title = nlp(row["title"])
             abstract = nlp(row["abstract"])
@@ -30,6 +31,7 @@ with open("query-concepts.tsv", "a", encoding="utf-8") as f:
                 if not str(each).lower() in nlp.Defaults.stop_words:
                     candidate_keys[str(each)] = {2016: 0, 2017: 0}
 
+        # Count the snippets frequency of every concept
         candidate = candidate_keys.keys()
         for index, row in sub_snippet.iterrows():
             title = [str(i) for i in nlp(row["title"])]
@@ -38,11 +40,14 @@ with open("query-concepts.tsv", "a", encoding="utf-8") as f:
                 if each in title or each in abstract:
                     candidate_keys[each][row["year"]] += 1
 
+        # Calculate the support of every concept
         for each in candidate:
             support = 1.0 * (candidate_keys[each][2016] + candidate_keys[each][2017]) / num * len(each.split(" "))
             if support >= threshold:
                 # print(support, candidate_keys[each])
                 keys[query][each] = candidate_keys[each]
+
+        # Store all concepts
         print(keys[query])
         for each in keys[query].keys():
             f.write(query + "\t" + each + "\t" + str(keys[query][each][2016]) + "\t" + str(keys[query][each][2017]) + "\n")

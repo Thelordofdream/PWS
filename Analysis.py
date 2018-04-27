@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import os
 
 
 concept_sim = pd.read_csv("similarity-matrix-concept.tsv", header=0, sep="\t")
@@ -23,6 +24,8 @@ for each_a in range(num_q):
     for each_b in range(each_a + 1, num_q):
         dif_q[each_a][each_b] = query_sim[(query_sim['query'] == queries[each_a]) & (query_sim['year'] == 2017)][queries[each_b]].sum() - query_sim[(query_sim['query'] == queries[each_a]) & (query_sim['year'] == 2016)][queries[each_b]].sum()
 
+if os.path.exists("similarity-query-changes.tsv"):
+    os.remove("similarity-query-changes.tsv")
 with open("similarity-query-changes.tsv", "a", encoding="utf-8") as f:
     header = "query\t"
     for i in range(num_q - 1):
@@ -40,6 +43,8 @@ for each_a in range(num_c):
     for each_b in range(each_a + 1, num_c):
         dif_c[each_a][each_b] = concept_sim[(concept_sim['concept'] == concepts[each_a]) & (concept_sim['year'] == 2017)][concepts[each_b]].sum() - concept_sim[(concept_sim['concept'] == concepts[each_a]) & (concept_sim['year'] == 2016)][concepts[each_b]].sum()
 
+if os.path.exists("similarity-concept-changes.tsv"):
+    os.remove("similarity-concept-changes.tsv")
 with open("similarity-concept-changes.tsv", "a", encoding="utf-8") as f:
     header = "concept\t"
     for i in range(num_c - 1):

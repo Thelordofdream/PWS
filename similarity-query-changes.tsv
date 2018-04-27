@@ -1,0 +1,19 @@
+query	apple	apple computer	apple mac	iPhone	iPod	apple juice	juice	orange juice
+query	apple	apple computer	apple mac	iPhone	iPod	apple juice	juice	orange juice
+apple	0.0	0.045	-0.045	0.0054	-0.0415	-0.0267	0.0	0.0
+apple computer	0.0	0.0	0.002	0.0132	0.0202	-0.003	0.0	0.0
+apple mac	0.0	0.0	0.0	-0.0143	-0.02	-0.0327	0.0	0.0
+iPhone	0.0	0.0	0.0	0.0	-0.0067	-0.0325	0.0	0.0
+iPod	0.0	0.0	0.0	0.0	0.0	-0.0141	0.0	0.0
+apple juice	0.0	0.0	0.0	0.0	0.0	0.0	-0.0501	-0.0246
+juice	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.014
+orange juice	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+query	apple	apple computer	apple mac	iPhone	iPod	apple juice	juice	orange juice
+apple	0.0	0.045	-0.045	0.0054	-0.0415	-0.0267	0.0	0.0
+apple computer	0.0	0.0	0.002	0.0132	0.0202	-0.003	0.0	0.0
+apple mac	0.0	0.0	0.0	-0.0143	-0.02	-0.0327	0.0	0.0
+iPhone	0.0	0.0	0.0	0.0	-0.0067	-0.0325	0.0	0.0
+iPod	0.0	0.0	0.0	0.0	0.0	-0.0141	0.0	0.0
+apple juice	0.0	0.0	0.0	0.0	0.0	0.0	-0.0501	-0.0246
+juice	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.014
+orange juice	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0

@@ -1,4 +1,4 @@
-concept	year	apple	apple computer	apple mac	iPhone	iPod	apple juice	juice	orange juice
+query	year	apple	apple computer	apple mac	iPhone	iPod	apple juice	juice	orange juice
 apple	2016	0.0	0.4736	0.596	0.8906	0.5522	0.4854	0.0	0.0
 apple computer	2016	0.0	0.0	0.498	0.3613	0.3035	0.3594	0.0	0.0
 apple mac	2016	0.0	0.0	0.0	0.6343	0.3984	0.374	0.0	0.0

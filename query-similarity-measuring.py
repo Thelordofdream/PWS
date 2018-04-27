@@ -24,7 +24,7 @@ for year in [2016, 2017]:
 if os.path.exists("similarity-matrix-query.tsv"):
     os.remove("similarity-matrix-query.tsv")
 with open("similarity-matrix-query.tsv", "a", encoding="utf-8") as f:
-    header = "concept\tyear\t"
+    header = "query\tyear\t"
     for i in range(num_queries - 1):
         header += queries[i] + "\t"
     header += queries[-1] + "\n"
